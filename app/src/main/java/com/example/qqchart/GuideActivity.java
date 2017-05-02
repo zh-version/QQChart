@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Window;
 
 public class GuideActivity extends Activity {
+    
     private Handler handler = new Handler() {
 
         @Override
@@ -17,7 +18,7 @@ public class GuideActivity extends Activity {
                     intent = new Intent(GuideActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
-                    overridePendingTransition(R.anim.scale_alpha_in,R.anim.scale_alpha_out);
+                    overridePendingTransition(R.anim.scale_alpha_in, R.anim.scale_alpha_out);
                     break;
             }
         }
